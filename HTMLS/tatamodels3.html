@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-color: powderblue;
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+<h1 style="text-align:center;">TOP MODELS</h1>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="harrierdark_D.jpg" style="width:50%">
+
+  <P>The Harrier #Dark with stunning new Atlas Black Colour and all new Interior theme. Experience the new Harrier #Dark by booking your test drive.</P>
+       
+  <P> Give a missed call on 7574890000 </P>
+    
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="exterior-image-164.jpg" style="width:50%">
+    <p>The Tata Tiago is a city car made by Tata Motors in India since 2016. It is derived from the Tata Kite project. </p>
+ <p>Give a missed call on 7574890000</p>
+ </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="front-left-side-47 (1).jpg" style="width:50%">
+    <p>The Tata Nexon AMT version is here at last and we test both its diesel and petrol avatars. The launch is expected in a few days' time, and we expect aggressive pricing on what looks to be a well-executed economical automatic SUV</p>
+    <p>Give a missed call on 7574890000</p> 
+</div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="tata-45x-concept_827x510_41519217607.jpg" style="width:50%">
+    <p>Tata Motors will launch a new premium hatchback based on the 45X concept in the second quarter of next fiscal, a senior company official said earlier. The 45X concept made debut at the Auto Expo last year, along with H5X, based on which the company has introduced the Harrier SUV. </p>
+    <p>Give a missed call on 7574890000</p>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="tata-blackbird-suv-render-launch-price-2-700x430.jpg" style="width:50%">
+    <p>As with all the recent Tata models, the H2X is designed as per the company’s Impact 2.0 design language and impresses us with its bold looks. It’s underpinned by the ALFA architecture, which will debut on the Tata Altroz late this year</p>
+  
+  <p>Give a missed call on 7574890000</p>
+</div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="300x225x2996999-tata_hexa.jpg.pagespeed.ic_.V-f8y9BvkU-Copy-2.jpg" style="width:50%">
+ <p>Tata Hexa, the premium SUV from the Indian automakers comes as a replacement to the Aria. The SUV has been built with Tata’s new design language – HorizonNext. Moreover, the build, quality and equipment on the Hexa matches modern benchmarks. ..</p> 
+</div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="harrierdark_D.jpg" style="width:100%" onclick="currentSlide(1)" alt="HARRIER">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="exterior-image-164.jpg" style="width:100%" onclick="currentSlide(2)" alt="TIAGO">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="front-left-side-47 (1).jpg" style="width:100%" onclick="currentSlide(3)" alt="NEXON">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="tata-45x-concept_827x510_41519217607.jpg" style="width:100%" onclick="currentSlide(4)" alt="45X CONCEPT">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="tata-blackbird-suv-render-launch-price-2-700x430.jpg" style="width:100%" onclick="currentSlide(5)" alt="BLACK BIRD CONCEPT">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="300x225x2996999-tata_hexa.jpg.pagespeed.ic_.V-f8y9BvkU-Copy-2.jpg" style="width:100%" onclick="currentSlide(6)" alt="HEXA">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
